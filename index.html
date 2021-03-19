@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <script>
+        function toggleResponsiveClass(event) {
+            event.preventDefault();
+            const navbar = document.querySelector("#myNavbar");
+            navbar.classList.toggle("responsive");
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,700;1,300;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3796ae0a6d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="navbarre.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+   <section class="navbar">
+        <div class="navbar" id="myNavbar">
+        <a class="icon" onclick="toggleResponsiveClass(event)">
+            <i class="fa fa-bars"></i>
+            <a href="index.html">Accueil</a>
+            <a href="recette-page.html">Recettes</a>
+            <a href="about.html">A propos</a>
+            <a href="form.html">Contact</a>
+        <form class="rechercher" method="GET" action="rechercher.js">
+            <input type="text" placeholder="Rechercher">
+         </form>
+         </div>
+    </section>
+    
+    
+    <div class="Welcome">
+        <h1>Welcome</h1>
+    </div>
+        <p class="Pwelcome">Bonjour et bienvenu sur ce super site de cuisine healthy</p>
+    <h2>Last Posts</h2> 
+    <section class="Slide">
+        
+        <img src="https://picsum.photos/200" alt=""> 
+        <img src="https://picsum.photos/200/300" alt="">
+        <img src="https://picsum.photos/200/300" alt="">
+        
+    </section>
+</body>
+</html>

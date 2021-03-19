@@ -1,0 +1,27 @@
+.flex-container {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1 {
+    background-color: rgb(40, 160, 120);
+    color: white;
+    font-size: 26px;
+
+}
+p {
+    text-align: center;
+}
+
+.img-about {
+    margin: 15px;
+    border-radius: 5% ;
+    padding: 0;
+    
+}
+
+div {
+    margin: 15px;
+}
