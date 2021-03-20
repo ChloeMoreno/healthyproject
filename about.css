@@ -3,17 +3,18 @@
     text-align: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-bottom: 100px;
 }
 
 h1 {
-    background-color: rgb(40, 160, 120);
+    background-color:#DD7E55;
     color: white;
     font-size: 26px;
 
 }
-p {
+/*p {
     text-align: center;
-}
+} */
 
 .card {
     /* Add shadows to create the "card" effect */
@@ -21,14 +22,29 @@ p {
     transition: 0.3s;
     border-radius: 10px;
     margin-bottom: 20px;
+    margin-top: 40px;
   }
 
   .card:hover {
     box-shadow: 2px 8px 16px 2px rgba(0,0,0,60%);
   }
 
+.big-card {
+    display: flex;
+    margin: 20px;
+    margin-top: 40px;
+    
+}
 
-  
+img.yellow-pic {
+    border-radius: 20px;
+}
+.big-card-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top: 20px;
+}
 @media screen and (max-width:425px) {
 #banniere {
     background-color: #DD7E55;
