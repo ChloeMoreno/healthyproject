@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,700;1,300;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3796ae0a6d.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="page">
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Afficher tout</button>
+            <button class="btn" onclick="filterSelection('matin')"> Matin</button>
+            <button class="btn" onclick="filterSelection('midi')"> Midi</button>
+            <button class="btn" onclick="filterSelection('soir')"> Soir</button>
+            <button class="btn" onclick="filterSelection('snack')"> Snack</button>
+        </div>
+
+        <div class="recette-cardbloc">
+            <div class="recette-card matin snack show ">
+                <div class="imgcontainer">
+                    <img class="img-recette" src="https://i.ibb.co/ncr6TNx/imgrecette.png"
+                        alt="recette des cookies chocolat">
+                </div>
+                <div class="recette-title">
+                    <h1>Cookies végétarien au chocolat</h1>
+                </div>
+                <div class="recette-text">
+                    Qui n'aime pas les cookies ? Craquant, moelleux et au pépites de chocolat, cette recette vous fera
+                    chavirer !
+                </div>
+                <div class="separator"></div>
+                <table class="stats-post">
+                    <tr>
+                        <td><i class="fas fa-stopwatch"></i>&ensp;20 min</td>
+                        <td class="stats-separator"><i class="fas fa-square"></i></td>
+                        <td><i class="fas fa-utensils"></i>&ensp;Facile</td>
+                        <td class="stats-separator"><i class="fas fa-square"></i></td>
+                        <td><i class="fas fa-coins"></i>&ensp;Bon marché</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="recette-card soir show ">
+                <div class="imgcontainer">
+                    <img class="img-recette" src="https://i.ibb.co/3zjjT3H/Pizza-avec-pate-a-la-courgette.jpg"
+                        alt="Pizza avec pâte à la courgette">
+                </div>
+                <div class="recette-title">
+                    <h1>Pizza avec pâte à la courgette</h1>
+                </div>
+                <div class="recette-text">
+                    La pâte à la courgette est une excellente base pour une pizza, des croque-monsieur, des gaufres salées…
+                </div>
+                <div class="separator"></div>
+                <table class="stats-post">
+                    <tr>
+                        <td><i class="fas fa-stopwatch"></i>&ensp;20 min</td>
+                        <td class="stats-separator"><i class="fas fa-square"></i></td>
+                        <td><i class="fas fa-utensils"></i>&ensp;Facile</td>
+                        <td class="stats-separator"><i class="fas fa-square"></i></td>
+                        <td><i class="fas fa-coins"></i>&ensp;Bon marché</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="recette-card midi show">
+                <div class="imgcontainer">
+                    <img class="img-recette" src="https://i.ibb.co/3WDKQgD/Poulet-thai.jpg"
+                        alt="Poulet thaï">
+                </div>
+                <div class="recette-title">
+                    <h1>Poulet thaï </h1>
+                </div>
+                <div class="recette-text">
+                    Cette recette est nutritivement intéréssante et apporte des oméga 3 !
+                </div>
+                <div class="separator"></div>
+                <table class="stats-post">
+                    <tr>
+                        <td><i class="fas fa-stopwatch"></i>&ensp;20 min</td>
+                        <td class="stats-separator"><i class="fas fa-square"></i></td>
+                        <td><i class="fas fa-utensils"></i>&ensp;Facile</td>
+                        <td class="stats-separator"><i class="fas fa-square"></i></td>
+                        <td><i class="fas fa-coins"></i>&ensp;Bon marché</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="recette-card snack soir show">
+                <div class="imgcontainer">
+                    <img class="img-recette" src="https://i.ibb.co/sRMttfv/Filet-mignon-multi-legumes.jpg"
+                        alt="Filet mignon multi-légumes">
+                </div>
+                <div class="recette-title">
+                    <h1> Filet mignon multi-légumes </h1>
+                </div>
+                <div class="recette-text">
+                    Un plat complet et gourmand, idéal pour faire manger des légumes aux enfants. 
+                </div>
+                <div class="separator"></div>
+                <table class="stats-post">
+                    <tr>
+                        <td><i class="fas fa-stopwatch"></i>&ensp;20 min</td>
+                        <td class="stats-separator"><i class="fas fa-square"></i></td>
+                        <td><i class="fas fa-utensils"></i>&ensp;Facile</td>
+                        <td class="stats-separator"><i class="fas fa-square"></i></td>
+                        <td><i class="fas fa-coins"></i>&ensp;Bon marché</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="recette-card snack midi show">
+                <div class="imgcontainer">
+                    <img class="img-recette" src="https://i.ibb.co/FB8XHzZ/Nouilles-thaies-veges.jpg"
+                        alt="Nouilles thaïes végés">
+                </div>
+                <div class="recette-title">
+                    <h1>Nouilles thaïes végés </h1>
+                </div>
+                <div class="recette-text">
+                    Un peu d’exotisme pour voyager entre potes et goûter aux saveurs qui nous dépaysent !
+                </div>
+                <div class="separator"></div>
+                <table class="stats-post">
+                    <tr>
+                        <td><i class="fas fa-stopwatch"></i>&ensp;20 min</td>
+                        <td class="stats-separator"><i class="fas fa-square"></i></td>
+                        <td><i class="fas fa-utensils"></i>&ensp;Facile</td>
+                        <td class="stats-separator"><i class="fas fa-square"></i></td>
+                        <td><i class="fas fa-coins"></i>&ensp;Bon marché</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="recette-card snack midi show">
+                <div class="imgcontainer">
+                    <img class="img-recette" src="https://i.ibb.co/Qm297xH/Curry-de-legumes-au-lait-de-coco.jpg"
+                        alt="Curry de légumes au lait de coco">
+                </div>
+                <div class="recette-title">
+                    <h1>Curry de légumes au lait de coco</h1>
+                </div>
+                <div class="recette-text">
+                    Une recette végétarienne pour manger les légumes autrement. 
+                </div>
+                <div class="separator"></div>
+                <table class="stats-post">
+                    <tr>
+                        <td><i class="fas fa-stopwatch"></i>&ensp;20 min</td>
+                        <td class="stats-separator"><i class="fas fa-square"></i></td>
+                        <td><i class="fas fa-utensils"></i>&ensp;Facile</td>
+                        <td class="stats-separator"><i class="fas fa-square"></i></td>
+                        <td><i class="fas fa-coins"></i>&ensp;Bon marché</td>
+                    </tr>
+                </table>
+            </div>
+
+            
+
+        </div>
+    </div>
+
+</body>
+
+</html>

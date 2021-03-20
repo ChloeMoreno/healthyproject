@@ -1,46 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Recettes</title>
-
-    <script>
-        function toggleResponsiveClass(event) {
-            event.preventDefault();
-            const navbar = document.querySelector("#myNavbar");
-            navbar.classList.toggle("responsive");
-        }
-    </script>
-    
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,700;1,300;1,500;1,700&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/3796ae0a6d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <link href="navbarre.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-  
-    <section class="navbar">
-        <div class="navbar" id="myNavbar">
-        <a class="icon" onclick="toggleResponsiveClass(event)">
-            <i class="fa fa-bars"></i>
-            <a href="index.html">Accueil</a>
-            <a href="recette-page.html">Recettes</a>
-            <a href="about.html">A propos</a>
-            <a href="form.html">Contact</a>
-        <form class="rechercher" method="GET" action="rechercher.js">
-            <input type="text" placeholder="Rechercher">
-         </form>
-         </div>
-    </section>
-
-
     <div class="post-container">
 
         <div class="post-img-container">
@@ -77,25 +51,25 @@
         <div class="post-components">
             <h2>Ingrédients</h2>
             <ul>
-                <li><input type="checkbox" id="component1" name="component1" checked>
+                <li><input type="checkbox" id="component1" name="component1" unchecked>
                     <label for="component1">200 g de farine</label>
                 </li>
-                <li><input type="checkbox" id="component1" name="component1" checked>
+                <li><input type="checkbox" id="component1" name="component1" unchecked>
                     <label for="component1">4 oeufs</label>
                 </li>
-                <li><input type="checkbox" id="component1" name="component1" checked>
+                <li><input type="checkbox" id="component1" name="component1" unchecked>
                     <label for="component1">50 g de sucre</label>
                 </li>
-                <li><input type="checkbox" id="component1" name="component1" checked>
+                <li><input type="checkbox" id="component1" name="component1" unchecked>
                     <label for="component1">1 sachet de levure</label>
                 </li>
-                <li><input type="checkbox" id="component1" name="component1" checked>
+                <li><input type="checkbox" id="component1" name="component1" unchecked>
                     <label for="component1">un cerveau</label>
                 </li>
-                <li><input type="checkbox" id="component1" name="component1" checked>
+                <li><input type="checkbox" id="component1" name="component1" unchecked>
                     <label for="component1">150 cl de lait demi-écrémé</label>
                 </li>
-                <li><input type="checkbox" id="component1" name="component1" checked>
+                <li><input type="checkbox" id="component1" name="component1" unchecked>
                     <label for="component1">50 g de beurre</label>
                 </li>
             </ul>
@@ -159,16 +133,19 @@
                 <input class="post-rating-input" name="rating" id="rating-5" value="5" type="radio">
             </div>
         </div>
-
-        <div class="post-recipe-seealso">
+ <div class="separator"></div>
+        <div class="post-recipe-seealso-container">
             <div class="seealso-title">
-                <span>Ces recettes pourrait vous intéresser...</span>
+                <h2>Ces recettes pourrait vous intéresser...</h2>
             </div>
-
+            <div class="seealso-post-img"><div class="seealso-post-img-title">Titre de la recette</div><img class="post-img" src="https://i.ibb.co/ncr6TNx/imgrecette.png"
+                    alt="recette des cookies chocolat"></div>
+            <div class="seealso-post-img"><div class="seealso-post-img-title">Titre de la recette</div><img class="post-img" src="https://i.ibb.co/ncr6TNx/imgrecette.png"
+                    alt="recette des cookies chocolat"></div>
+            <div class="seealso-post-img"><div class="seealso-post-img-title">Titre de la recette</div><img class="post-img" src="https://i.ibb.co/ncr6TNx/imgrecette.png"
+                    alt="recette des cookies chocolat"></div>
         </div>
-
     </div>
-
 </body>
 
 </html>

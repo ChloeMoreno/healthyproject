@@ -1,0 +1,296 @@
+/*--------------------------RECETTE-PAGE -----------------------*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #2e2927;
+    margin: 0px;
+}
+
+h2 {
+    color: #517B54
+}
+
+.post-container {
+    width: 100%;
+    background-color: white;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.post-img-container {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-img {
+    width: 100%;
+}
+
+.post-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-title h1 {
+    text-align: center;
+    font-size: 1.50em;
+    margin: 0px;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    background-color: #517B54;
+}
+
+.stats-post {
+    width: 100%;
+    padding: 5px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.stats-post td {
+    font-weight: 500;
+}
+
+.tag-post-recette {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag-recette {
+    padding: 5px;
+    margin: 3px;
+    border-radius: 5px;
+    font-size: 0.7em;
+    background-color: #D2DAD3;
+}
+
+.stats-post i, .tag-post-recette i {
+    color: #517B54;
+    font-size: 1.2em;
+}
+
+.stats-separator i {
+    color: #D2DAD3;
+    font-size: 0.6em;
+}
+
+.share-recette-post {
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+    height: 30px;
+    padding: 5px;
+    box-shadow: 1px 2px 9px 0 rgba(0, 0, 0, 0.13);
+}
+
+.share-recette-post span {
+    font-size: 0.8em;
+}
+
+.share-recette-post i {
+    color: #517B54;
+    font-size: 1.3em;
+}
+
+.post-components h2 {
+    text-align: center;
+    padding: 5px;
+    margin: 0px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.post-components {
+    padding: 10px;
+    font-weight: 300;
+    width: 80%;
+    background-image: url(https://graphiste.com/blog/wp-content/uploads/2019/06/pack-texture.jpg);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-components ul li {
+    list-style: none;
+    font-size: 1em;
+}
+
+.post-components ul {
+    padding-left: 10px;
+}
+
+.separator {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-bottom: #D2DAD3 1px solid;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-recipe h2 {
+    text-align: center;
+    padding: 5px;
+    margin: 0px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.recipe-title {
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 40%;
+    color: #2e2927;
+}
+
+.post-recipe {
+    padding: 20px 20px 0px 20px;
+}
+
+.recipe-step p {
+    font-size: 0.9em;
+    font-weight: 300;
+    margin: 5px 0px 15px 0px;
+}
+
+.post-feedback {
+    background-color: #D2DAD3;
+    font-weight: 1em;
+}
+
+.rating-post-container {
+    padding: 20px;
+    background-color: #D2DAD3;
+    margin: auto;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.rating-title {
+    font-size: 1em;
+    font-weight: bold;
+    color: #517B54;
+}
+
+/*** STAR RATING  ***/
+
+.rating-group {
+    display: inline-flex;
+    padding: 5px;
+}
+/* make hover effect work properly in IE */
+
+.post-rating-icon {
+    pointer-events: none;
+}
+
+/* hide radio inputs */
+
+.post-rating-input {
+    position: absolute !important;
+    left: -9999px !important;
+}
+
+/* set icon padding and size */
+
+.post-rating-label {
+    cursor: pointer;
+    padding: 0 0.1em;
+    font-size: 1.3em;
+}
+
+/* set default star color */
+
+.post-rating-icon--star {
+    color: orange;
+}
+
+/* set color of none icon when unchecked */
+
+.post-rating-icon--none {
+    color: #eee;
+}
+
+/* if none icon is checked, make it red */
+
+.post-rating-input--none:checked+.post-rating-label .post-rating-icon--none {
+    color: red;
+}
+
+/* if any input is checked, make its following siblings grey */
+
+.post-rating-input:checked~.post-rating-label .post-rating-icon--star {
+    color: #ddd;
+}
+
+/* make all stars orange on rating group hover */
+
+.rating-group:hover .post-rating-label .post-rating-icon--star {
+    color: orange;
+}
+
+/* make hovered input's following siblings grey on hover */
+
+.post-rating-input:hover~.post-rating-label .post-rating-icon--star {
+    color: #ddd;
+}
+
+/* make none icon grey on rating group hover */
+
+.rating-group:hover .post-rating-input--none:not(:hover)+.post-rating-label .post-rating-icon--none {
+    color: #eee;
+}
+
+/* make none icon red on hover */
+
+.post-rating-input--none:hover+.post-rating-label .post-rating-icon--none {
+    color: red;
+}
+/************ END  STAR RATING ****************/
+
+.post-recipe-seealso-container{
+    padding: 0px 20px 20px 20px;
+    color: #517B54;
+}
+
+.seealso-title h2{
+    text-align: center;
+padding: 5px;
+margin: 0px;
+text-transform: uppercase;
+font-size: 1.2em;
+}
+
+.seealso-post-img {
+    height: 125px;
+    overflow: hidden;
+    margin:5px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.seealso-post-img-title {
+    position: absolute;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+  font-size:1.3em;
+  text-transform: uppercase;
+  width: 100%;
+text-align: center;
+}
+
+
+
+
+
+
+/*--------------------------RECETTE-PAGE END -----------------------*/
