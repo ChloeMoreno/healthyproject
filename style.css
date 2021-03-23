@@ -1,3 +1,11 @@
+:root {
+  --colorgreen: #517B54;
+  --colororange: #dd7e55;
+  --colorgrey: #2e2927;
+}
+
+
+
 body {
   font-family: "Montserrat", sans-serif;
   color: #2e2927;

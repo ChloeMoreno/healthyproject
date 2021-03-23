@@ -1,0 +1,33 @@
+:root {
+    --colorgreen: #517B54;
+    --colororange: #dd7e55;
+    --colorgrey: #2e2927;
+}
+
+@media screen and (max-width:425px) {
+    footer {
+        background-color: var(--colororange);
+        color: white;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .footer-text {
+        text-align: center;
+    }
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (min-width:426px) {
+    footer {
+        background-color: var(--colororange);
+        color: white;
+    }
+}

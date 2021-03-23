@@ -1,3 +1,9 @@
+:root {
+    --colorgreen: #517B54;
+    --colororange: #dd7e55;
+    --colorgrey: #2e2927;
+}
+
 .flex-container {
     display: flex;
     text-align: center;
@@ -35,7 +41,9 @@ h1 {
     margin-top: 40px;
     
 }
-
+.card h4 {
+    background-color: var(--colorgreen);
+}
 img.yellow-pic {
     border-radius: 20px;
 }
