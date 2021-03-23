@@ -1,13 +1,41 @@
 /*--------------------------RECETTE-PAGE -----------------------*/
 
+:root {
+    --colorgreen: #517B54;
+    --colororange: #dd7e55;
+    --colorgrey: #2e2927;
+}
+
+.font-s {
+    font-size: 0, 6em;
+}
+
+.font-m {
+    font-size: 0, 8em;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     color: #2e2927;
     margin: 0px;
 }
 
+h1 {
+    text-align: center;
+    font-size: 1.50em;
+    margin: 0px;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    background-color: #517B54;
+}
+
 h2 {
-    color: #517B54
+    text-align: center;
+    padding: 5px;
+    margin: 0px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: #517B54;
 }
 
 .post-container {
@@ -32,15 +60,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.post-title h1 {
-    text-align: center;
-    font-size: 1.50em;
-    margin: 0px;
-    padding: 5px 10px 5px 10px;
-    color: white;
-    background-color: #517B54;
 }
 
 .stats-post {
@@ -69,7 +88,7 @@ h2 {
 }
 
 .stats-post i, .tag-post-recette i {
-    color: #517B54;
+    color: #dd7e55;
     font-size: 1.2em;
 }
 
@@ -87,7 +106,7 @@ h2 {
     width: 70%;
     height: 30px;
     padding: 5px;
-    box-shadow: 1px 2px 9px 0 rgba(0, 0, 0, 0.13);
+    box-shadow: 3px 2px 9px 3px rgba(0, 0, 0, 0.13);
 }
 
 .share-recette-post span {
@@ -97,14 +116,6 @@ h2 {
 .share-recette-post i {
     color: #517B54;
     font-size: 1.3em;
-}
-
-.post-components h2 {
-    text-align: center;
-    padding: 5px;
-    margin: 0px;
-    text-transform: uppercase;
-    font-size: 1.2em;
 }
 
 .post-components {
@@ -121,10 +132,6 @@ h2 {
     font-size: 1em;
 }
 
-.post-components ul {
-    padding-left: 10px;
-}
-
 .separator {
     margin-bottom: 15px;
     margin-top: 15px;
@@ -134,20 +141,8 @@ h2 {
     margin-right: auto;
 }
 
-.post-recipe h2 {
-    text-align: center;
-    padding: 5px;
-    margin: 0px;
-    text-transform: uppercase;
-    font-size: 1.2em;
-}
-
 .recipe-title {
-    font-size: 1em;
-    font-weight: bold;
-    text-transform: uppercase;
     width: 40%;
-    color: #2e2927;
 }
 
 .post-recipe {
@@ -185,6 +180,7 @@ h2 {
     display: inline-flex;
     padding: 5px;
 }
+
 /* make hover effect work properly in IE */
 
 .post-rating-icon {
@@ -253,25 +249,18 @@ h2 {
 .post-rating-input--none:hover+.post-rating-label .post-rating-icon--none {
     color: red;
 }
+
 /************ END  STAR RATING ****************/
 
-.post-recipe-seealso-container{
+.post-recipe-seealso-container {
     padding: 0px 20px 20px 20px;
     color: #517B54;
-}
-
-.seealso-title h2{
-    text-align: center;
-padding: 5px;
-margin: 0px;
-text-transform: uppercase;
-font-size: 1.2em;
 }
 
 .seealso-post-img {
     height: 125px;
     overflow: hidden;
-    margin:5px;
+    margin: 5px;
     border-radius: 5px;
     position: relative;
 }
@@ -279,18 +268,61 @@ font-size: 1.2em;
 .seealso-post-img-title {
     position: absolute;
     top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color:white;
-  font-size:1.3em;
-  text-transform: uppercase;
-  width: 100%;
-text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
 }
 
+@media (min-width: 800px) {
+    .stats-post {
+        width: 50%;
+        font-size: 0.9em;
+        text-align: center;
+        margin: auto;
+    }
+    .post-container {
+        width: 80%;
+        margin: auto;
+    }
+    .post-components {
+        width: 40%;
+        float: right;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    .post-recipe {
+        width: 50%;
+        padding: 1rem;
+    }
+    .separator {
+        width: 60%;
+    }
+    .share-recette-post {
+        width: 50%;
+    }
+    .rating-post-container {
+        margin:1rem;
+        width: 45%;
+        margin:auto;
+    }
 
+    .post-recipe-seealso-container {
+        display:flex;
+    
+    }
+    .seealso-post-img {
+        height:400px;
+        width:90%;
+        
+    }
 
-
-
+    .post-img-container {
+        height:300px;
+    }
+}
 
 /*--------------------------RECETTE-PAGE END -----------------------*/
