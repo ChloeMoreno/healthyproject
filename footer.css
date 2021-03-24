@@ -4,9 +4,43 @@
     --colorgrey: #2e2927;
 }
 
-@media screen and (max-width:425px) {
+a {
+    list-style: none;
+    color: white;
+}
+
+.fa {
+    padding: 5px;
+    align-items: center;
+
+}
+
+.footer-text {
+    font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (min-width:426px) {
     footer {
-        background-color: var(--colororange);
+        background-color: var(--colorgreen);
+        background-image:
+        linear-gradient(
+         white, var(--colorgreen) 
+        );
+        height: 250px;
+        color: white;
+        text-align: center;
+    }
+    .icon {
+        margin-bottom: 10px;
+    }
+    .footer-text {
+        padding-top: 90px;
+    }
+}
+
+@media screen and (max-width:425px) { 
+    footer {
+        background-color: var(--colorgreen);
         color: white;
         height: 150px;
         display: flex;
@@ -22,12 +56,5 @@
         flex-direction: column;
         align-items: center;
     }
-    
 }
 
-@media screen and (min-width:426px) {
-    footer {
-        background-color: var(--colororange);
-        color: white;
-    }
-}
