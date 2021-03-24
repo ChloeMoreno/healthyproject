@@ -7,18 +7,12 @@
 
 }
 
-.font-s {
-    font-size: 0, 6em;
-}
-
-.font-m {
-    font-size: 0, 8em;
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
     color: #2e2927;
     margin: 0px;
+    font-size:16px;
+    background: #D2DAD3;
 }
 
 h1 {
@@ -38,11 +32,7 @@ h2 {
     font-size: 1.2em;
     color: #517B54;
 }
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-size:16px;
-    background: #D2DAD3;
-}
+
 
 .recette-cardbloc {
     display: grid;
@@ -62,6 +52,18 @@ justify-content: center; /* align horizontal */
 align-items: center; /* align vertical */
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
+}
+
+.recette-card {
+    height: 400px;
+    max-height: 600px;
+    box-shadow: 5px 5px 5px rgb(121, 121, 121);
+    background-color: white;
+    width: 100%;
+    position:relative; 
+    border-radius: 10px;
+    display: none;
+   transition-duration:0.3s ;
 }
 
 .img-recette {
@@ -137,17 +139,7 @@ border-top-right-radius: 10px;
     overflow: hidden;
   }
   
-  .recette-card {
-    height: 400px;
-    max-height: 600px;
-    box-shadow: 5px 5px 5px rgb(121, 121, 121);
-    background-color: white;
-    width: 100%;
-    position:relative; 
-    border-radius: 10px;
-    display: none;
-   transition-duration:0.3s ;
-}
+  
 
 .recette-card:hover {
 

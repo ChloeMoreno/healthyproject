@@ -22,11 +22,12 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 1.50em;
+    font-size: 2.50em;
     margin: 0px;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 15px 5px 15px;
     color: white;
     background-color: #517B54;
+    font-family:'Dancing Script', cursive;
 }
 
 h2 {
@@ -129,7 +130,7 @@ h2 {
 
 .post-components ul li {
     list-style: none;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .separator {
@@ -263,6 +264,9 @@ h2 {
     margin: 5px;
     border-radius: 5px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .seealso-post-img-title {
@@ -275,6 +279,7 @@ h2 {
     text-transform: uppercase;
     width: 100%;
     text-align: center;
+    background-color: var(--colorgreen);
 }
 
 @media (min-width: 800px) {
@@ -292,11 +297,12 @@ h2 {
         width: 40%;
         float: right;
         padding: 1rem;
-        margin: 1rem;
+        margin: 2rem;
     }
     .post-recipe {
         width: 50%;
         padding: 1rem;
+        margin:1rem;
     }
     .separator {
         width: 60%;
@@ -315,8 +321,8 @@ h2 {
     
     }
     .seealso-post-img {
-        height:400px;
-        width:90%;
+        height:200px;
+        width:33%
         
     }
 
