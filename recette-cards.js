@@ -84,3 +84,12 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
+function toggleResponsiveClass() {
+  const nav = document.querySelector(".menu");
+  nav.classList.toggle("responsive");
+}
+
+function showSubMenu(){
+  const subMenu = document.querySelector(".sub-menu");
+  subMenu.classList.toggle("responsive");
+

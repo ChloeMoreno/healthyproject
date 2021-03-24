@@ -8,6 +8,8 @@
     <title>Nos Recettes</title>
     <link rel="stylesheet" href="recette-cards.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="navbar.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,700;1,300;1,500;1,700&display=swap"
         rel="stylesheet">
@@ -17,6 +19,49 @@
 </head>
 
 <body>
+    <div class="title"> 
+        <h1>Healthy Food</h1> 
+    </div>
+    <header>
+        <nav class="wrapper">
+            <a class="icon" onclick="toggleResponsiveClass()">
+                <i class="fa fa-bars"></i>
+            </a>
+           
+            <ul class="menu">
+                <li>
+                    <a href="index.html" title="Accueil">Accueil</a>
+                </li>
+                <li>
+                    <a onclick="showSubMenu()" title="Recettes">Recettes</a>
+                    <ul class="sub-menu">
+                       <li>
+                           <a href="recette-page.html" title="Matin">Matin</a>
+                        </li>
+                        <li>
+                            <a href="recette-page.html" title="Midi">Midi</a>
+                        </li>
+                        <li>
+                            <a href="recette-page.html" title="Snack">Snack</a>
+                        </li>
+                        <li>
+                            <a href="recette-page.html" title="Soir">Soir</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html" title="A propos">A propos</a>
+                </li>
+                <li>
+                    <a href="form.html" title="Contact">Contact</a>
+                </li>
+                <li>
+                   <input type="text" placeholder="Rechercher"> 
+                </li>
+            </ul>
+
+        </nav>
+    </header>
     <div class="page">
         <div id="myBtnContainer">
             <button class="btn active" onclick="filterSelection('all')"> Afficher tout</button>

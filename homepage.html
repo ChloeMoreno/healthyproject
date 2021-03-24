@@ -5,11 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="navbar.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/homepage.css">
     <link rel="stylesheet" href="/homepage.js">
     <link rel="stylesheet" href="/style.css">
+    <script>
+        function toggleResponsiveClass() {
+            const nav = document.querySelector(".menu");
+            nav.classList.toggle("responsive");
+        }
+
+        function showSubMenu(){
+            const subMenu = document.querySelector(".sub-menu");
+            subMenu.classList.toggle("responsive");
+        }
+    </script>
 </head>
 <body>
+    <div class="title"> 
+        <h1>Healthy Food</h1> 
+    </div>
+    <header>
+        <nav class="wrapper">
+            <a class="icon" onclick="toggleResponsiveClass()">
+                <i class="fa fa-bars"></i>
+            </a>
+           
+            <ul class="menu">
+                <li>
+                    <a href="index.html" title="Accueil">Accueil</a>
+                </li>
+                <li>
+                    <a onclick="showSubMenu()" title="Recettes">Recettes</a>
+                    <ul class="sub-menu">
+                       <li>
+                           <a href="recette-page.html" title="Matin">Matin</a>
+                        </li>
+                        <li>
+                            <a href="recette-page.html" title="Midi">Midi</a>
+                        </li>
+                        <li>
+                            <a href="recette-page.html" title="Snack">Snack</a>
+                        </li>
+                        <li>
+                            <a href="recette-page.html" title="Soir">Soir</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html" title="A propos">A propos</a>
+                </li>
+                <li>
+                    <a href="form.html" title="Contact">Contact</a>
+                </li>
+                <li>
+                   <input type="text" placeholder="Rechercher"> 
+                </li>
+            </ul>
+
+        </nav>
+    </header>
     <div class="homepage">
         <h1>Accueil</h1>
         <p>Bonjour et Bienvenue sur The Healthy Project,
