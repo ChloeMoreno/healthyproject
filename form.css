@@ -5,7 +5,7 @@ h1 {
     justify-content: center;
 }
 
-p {
+.form-text {
     margin-bottom: 100px;
     margin-top: 20px;
     text-align: center;
@@ -17,39 +17,13 @@ p {
     align-items: center;
 
 }
-@media screen and (max-width: 425px) {
 
-input {
-    width: 80%; 
-    padding: 5px;  
-     border: 1px solid #ccc; 
-     border-radius: 4px; 
-     box-sizing: border-box; 
-     margin-top: 6px; 
-     margin-bottom: 10px; 
-     resize: vertical;
+body {
+    font-family: "Montserrat", sans-serif;
 }
-#message {
-    width: 80%; 
-    height: 100px;
-    padding: 5px;  
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical;
-}
-button {
-    width: 20%;
-    background-color: #517B54 ;
-    color: white;
-    border-radius: 8px;
-    border: 0px;
-    height: 27px;
 
-}
-}
+
+
 
 @media screen and (min-width:426px) {
 
@@ -81,7 +55,53 @@ button {
         border-radius: 8px;
         border: 0px;
         height: 27px;
+        margin-bottom: 15px;
     
+    }
+    .page-size {
+        width: 80%;
+        margin: auto;
+        background-color: white;
+    }
+
+    body {
+        background-color: #e8e8e8;
     }
 
 }
+
+@media screen and (max-width: 425px) {
+
+input {
+    width: 80%; 
+    padding: 5px;  
+     border: 1px solid #ccc; 
+     border-radius: 4px; 
+     box-sizing: border-box; 
+     margin-top: 6px; 
+     margin-bottom: 10px; 
+     resize: vertical;
+}
+#message {
+    width: 80%; 
+    height: 100px;
+    padding: 5px;  
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+}
+button {
+    width: 20%;
+    background-color: #517B54 ;
+    color: white;
+    border-radius: 8px;
+    border: 0px;
+    height: 27px;
+    margin-bottom: 15px;
+
+}
+}
+

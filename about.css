@@ -1,27 +1,130 @@
+:root {
+    --colorgreen: #517B54;
+    --colororange: #dd7e55;
+    --colorgrey: #2e2927;
+}
+
 .flex-container {
     display: flex;
     text-align: center;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
 }
 
-h1 {
-    background-color: rgb(40, 160, 120);
-    color: white;
+.mid-title {
+    
+    color: var(--colorgreen);
     font-size: 26px;
+    padding-left: 10px;
+    
 
 }
-p {
-    text-align: center;
+
+.separator {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-bottom: #D2DAD3 1px solid;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
 }
 
-.img-about {
-    margin: 15px;
-    border-radius: 5% ;
-    padding: 0;
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.card p {
+    color: var(--colororange);
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 2px 4px 8px 2px rgba(0,0,0,40%);
+    transition: 0.3s;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+
+  .card:hover {
+    box-shadow: 2px 8px 16px 2px rgba(0,0,0,60%);
+  }
+
+.big-card {
+    display: flex;
+    margin: 20px;
+    margin-top: 40px;
+    
+}
+.card h4 {
+    background-color: var(--colorgreen);
+    color: white;
+    height: 25px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+}
+img.yellow-pic {
+    border-radius: 20px;
+}
+.big-card-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.lil-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    color: var(--colororange);
+}
+
+@media screen and (min-width: 426px) {
+    #banniere {
+        height: 150px;
+        text-align: center;
+        font-size: 100px;
+        font-family: 'Dancing Script', cursive;
+        color: var(--colororange);
+        background-color: white;
+        
+    }
+    .yellow-pic {
+        width: 45%;
+    }
+   .page-size {
+       width: 80%;
+       background-color: white;
+       margin: auto;
+   }
+
+   body {
+       background-color: #e8e8e8;
+   }
+
+    }
+        
+@media screen and (max-width:425px) {
+#banniere {
+    background-color: #DD7E55;
+    color: white;
+    }
+
+    .big-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .yellow-pic {
+        width: 100%;
+    }
     
 }
 
-div {
-    margin: 15px;
-}
+
+
+
+
