@@ -6,6 +6,10 @@
     --colorgrey: #2e2927;
 
 }
+a {
+    text-decoration: none;
+    color:var(--colorgrey)
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
