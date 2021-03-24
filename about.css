@@ -12,13 +12,32 @@
     margin-bottom: 100px;
 }
 
-h1 {
-    background-color:#DD7E55;
-    color: white;
+.mid-title {
+    
+    color: var(--colorgreen);
     font-size: 26px;
+    padding-left: 10px;
+    
 
 }
 
+.separator {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-bottom: #D2DAD3 1px solid;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.card p {
+    color: var(--colororange);
+}
 
 .card {
     /* Add shadows to create the "card" effect */
@@ -41,6 +60,10 @@ h1 {
 }
 .card h4 {
     background-color: var(--colorgreen);
+    color: white;
+    height: 25px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
 }
 img.yellow-pic {
     border-radius: 20px;
@@ -52,16 +75,35 @@ img.yellow-pic {
     padding-top: 20px;
 }
 
+.lil-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    color: var(--colororange);
+}
+
 @media screen and (min-width: 426px) {
     #banniere {
-        background-image: url(rsz_1citrus.jpg);
         height: 150px;
         text-align: center;
         font-size: 100px;
-        font-family: 'Nixie One', cursive;
+        font-family: 'Dancing Script', cursive;
+        color: var(--colororange);
+        background-color: white;
         
     }
-        
+    .yellow-pic {
+        width: 45%;
+    }
+   .page-size {
+       width: 80%;
+       background-color: white;
+       margin: auto;
+   }
+
+   body {
+       background-color: #e8e8e8;
+   }
+
     }
         
 @media screen and (max-width:425px) {
@@ -69,6 +111,17 @@ img.yellow-pic {
     background-color: #DD7E55;
     color: white;
     }
+
+    .big-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .yellow-pic {
+        width: 100%;
+    }
+    
 }
 
 

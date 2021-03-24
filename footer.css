@@ -19,14 +19,11 @@ a {
     font-family: "Montserrat", sans-serif;
 }
 
+
 @media screen and (min-width:426px) {
     footer {
         background-color: var(--colorgreen);
-        background-image:
-        linear-gradient(
-         white, var(--colorgreen) 
-        );
-        height: 250px;
+        height: 150px;
         color: white;
         text-align: center;
     }
@@ -34,7 +31,8 @@ a {
         margin-bottom: 10px;
     }
     .footer-text {
-        padding-top: 90px;
+        margin: auto;
+        padding-top: 2px;
     }
 }
 

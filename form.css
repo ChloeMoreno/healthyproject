@@ -18,6 +18,13 @@ h1 {
 
 }
 
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+
 @media screen and (min-width:426px) {
 
     input {
@@ -50,6 +57,15 @@ h1 {
         height: 27px;
         margin-bottom: 15px;
     
+    }
+    .page-size {
+        width: 80%;
+        margin: auto;
+        background-color: white;
+    }
+
+    body {
+        background-color: #e8e8e8;
     }
 
 }
