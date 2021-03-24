@@ -28,9 +28,6 @@
             font-size: 20px;
         }
 
-    h1 {
-        font-size: 1em;
-    }
 
     input{
         width:160px;
@@ -43,7 +40,7 @@
         display: block;
     }
     header li:hover a{
-        background-color:var(--colororange);
+        background-color:var(--colorgreen);
         color:white;
     }
     
@@ -57,10 +54,10 @@ body {
 }
 
 h1 {
-    color:var(--colorgreen);
+    color:white;
     margin-top: 1O0px;
     vertical-align: middle;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 
@@ -69,7 +66,7 @@ h1 {
     flex-direction: row;
     width:100%;
     height: 100px;
-    background-color:var(--colororange);
+    background-color:var(--colorgreen);
     text-align: center;
     justify-content: space-around;
     align-items: center;
@@ -102,7 +99,7 @@ ul {
 }
 
 header{
-    background-color:var(--colororange);
+    background-color:white;
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -116,10 +113,8 @@ header li {
     color: white;
     text-align: center;
     text-decoration: none;
-    font-size: 20px;
-    cursor : pointer;
-    
-    
+    font-size: 22px;
+    cursor : pointer;  
 
 }
 
@@ -137,7 +132,7 @@ header li a{
 .sub-menu {
     display: none;
     position: absolute;
-    background-color:var(--colororange);
+    background-color:white;
     width: 200px;
 
     
@@ -148,7 +143,7 @@ header li a{
 }
 
 .sub-menu li a {
-    color: #fff;
+    color:var(--colororange);
     width: 200px;
     height:50px;
     line-height: 50px;
@@ -170,6 +165,7 @@ header li a{
     width: 70px;
     margin-right: 100px;
 }
+
 
 
 
