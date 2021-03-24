@@ -18,9 +18,7 @@ h1 {
     font-size: 26px;
 
 }
-/*p {
-    text-align: center;
-} */
+
 
 .card {
     /* Add shadows to create the "card" effect */
@@ -53,6 +51,19 @@ img.yellow-pic {
     padding-left: 50px;
     padding-top: 20px;
 }
+
+@media screen and (min-width: 426px) {
+    #banniere {
+        background-image: url(rsz_1citrus.jpg);
+        height: 150px;
+        text-align: center;
+        font-size: 100px;
+        font-family: 'Nixie One', cursive;
+        
+    }
+        
+    }
+        
 @media screen and (max-width:425px) {
 #banniere {
     background-color: #DD7E55;
@@ -60,18 +71,6 @@ img.yellow-pic {
     }
 }
 
-@media screen and (min-width: 426px) {
-#banniere {
-    background-image: url(rsz_1citrus.jpg);
-    height: 150px;
-    text-align: center;
-    font-size: 100px;
-    font-family: 'Nixie One', cursive;
-    
-}
-    
-}
-    
 
 
 
