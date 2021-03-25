@@ -1,7 +1,5 @@
 @media screen and (max-width: 600px) {
   :root {
-    --colorgreen: #517b54;
-    --colororange: #dd7e55;
     --colorgrey: #72bda3;
   }
 
@@ -124,7 +122,7 @@
   }
   .homepage-img img {
     width: 30%;
-    height: 193.66px;
+    height: auto;
     border-radius: 10px;
   }
   .homepage-img a {
