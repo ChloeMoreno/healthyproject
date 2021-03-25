@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
@@ -12,6 +13,33 @@
             event.preventDefault();
             const navbar = document.querySelector("#myNavbar");
             navbar.classList.toggle("responsive");
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
         }
     </script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -29,25 +57,26 @@
             nav.classList.toggle("responsive");
         }
 
-        function showSubMenu(){
+        function showSubMenu() {
             const subMenu = document.querySelector(".sub-menu");
             subMenu.classList.toggle("responsive");
         }
     </script>
 </head>
+
 <body>
 
-    <section> 
-        <div class="title"> 
-            <img src="logoHC-02.png" class="logo"/>
-            <h1>Healthy Cook</h1> 
+    <section>
+        <div class="title">
+            <img src="logoHC-02.png" class="logo" />
+            <h1>Healthy Cook</h1>
         </div>
         <header>
             <nav class="wrapper">
                 <a class="icon" onclick="toggleResponsiveClass()">
                     <i class="fa fa-bars"></i>
                 </a>
-               
+
                 <ul class="menu">
                     <li>
                         <a href="index.html" title="Accueil">Accueil</a>
@@ -55,8 +84,8 @@
                     <li>
                         <a onclick="showSubMenu()" title="Recettes">Recettes</a>
                         <ul class="sub-menu">
-                           <li>
-                               <a href="recette-cards.html" title="Matin">Matin</a>
+                            <li>
+                                <a href="recette-cards.html" title="Matin">Matin</a>
                             </li>
                             <li>
                                 <a href="recette-cards.html" title="Midi">Midi</a>
@@ -76,44 +105,76 @@
                         <a href="form.html" title="Contact">Contact</a>
                     </li>
                     <li>
-                       <input type="text" placeholder="Rechercher"> 
+                        <input type="text" placeholder="Rechercher">
                     </li>
                 </ul>
-    
+
             </nav>
         </header>
-        
-</section>   
-    
-    
+
+    </section>
+
+    <div class="slideshow-container">
+
+        <div style="display:block" class="mySlides">
+            <img src="https://i.ibb.co/L9mB9nn/igor-flek-HUQ1w-A0x-CSA-unsplash.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://i.ibb.co/6n0FdnS/amirali-mirhashemian-v2z6-Yhp-6-Gc-unsplash.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://i.ibb.co/wwmBF5J/lily-banse-YHSwy6uqvk-unsplash.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+    <div class="button-slide">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
     <div class="homepage">
+
+        
+
         <div class="homepage-container">
+            
             <h2>Derniers Posts</h2>
             <div class="homepage-img">
-                <a href="/recettespages/recette-page7.html"><img src="https://i.ibb.co/3MF6Dqh/Smoothie-energie.jpg" alt="les Smoothie-energie"></a>
+                <a href="/recettespages/recette-page7.html"><img src="https://i.ibb.co/3MF6Dqh/Smoothie-energie.jpg"
+                        alt="les Smoothie-energie"></a>
                 <p>Les cookie de Bernard</p>
-                <a href="recettespages/recette-page3.html"><img src="https://i.ibb.co/sRMttfv/Filet-mignon-multi-legumes.jpg" alt="Filet-mignon-multi-legumes"></a>
+                <a href="recettespages/recette-page3.html"><img
+                        src="https://i.ibb.co/sRMttfv/Filet-mignon-multi-legumes.jpg"
+                        alt="Filet-mignon-multi-legumes"></a>
                 <p>Filet-mignon-multi-legumes</p>
-                <a href="/recettespages/recette-page2.html"><img src=" https://i.ibb.co/3zjjT3H/Pizza-avec-pate-a-la-courgette.jpg" alt=" Pizza-avec-pate-a-la-courgette"></a>
+                <a href="/recettespages/recette-page2.html"><img
+                        src=" https://i.ibb.co/3zjjT3H/Pizza-avec-pate-a-la-courgette.jpg"
+                        alt=" Pizza-avec-pate-a-la-courgette"></a>
                 <p> Pizza avec pate a la courgette</p>
-            </div>    
+            </div>
         </div>
     </div>
 </body>
 <footer>
     <div class="footer-container">
         <div class="footer-text">
-        <p>The healthy project © </p>
-        <hr width="80%" color="white" size="0,5px">
-        <p> Un projet réalisé par THE groupe 2. </p>
+            <p>The healthy project © </p>
+            <hr width="80%" color="white" size="0,5px">
+            <p> Un projet réalisé par THE groupe 2. </p>
         </div>
         <div class="icons">
-            
+
             <a href="https://github.com/ChloeMoreno/healthyproject"> <img src="github-light.png"></a>
-            <a href="https://www.instagram.com/?hl=fr"> 
-            <i class="fa fa-instagram" style="font-size: 40px"> </i></a>
+            <a href="https://www.instagram.com/?hl=fr">
+                <i class="fa fa-instagram" style="font-size: 40px"> </i></a>
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-            <i class="fa fa-youtube-play" style="font-size:40px"></i></a>
+                <i class="fa fa-youtube-play" style="font-size:40px"></i></a>
 
 
         </div>
@@ -121,4 +182,5 @@
 
 
 </footer>
+
 </html>
