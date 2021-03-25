@@ -131,9 +131,12 @@
   background-color: var(--colorgrey);
 }
 
+
 * {
   box-sizing: border-box;
 }
+
+
 
 body {
   font-family: Verdana, sans-serif;
@@ -165,7 +168,7 @@ img {
   background-color: white;
   width: 80%;
   margin: auto;
-  padding: 10px;
+  padding: 10px 0px 10px 0px;
 }
 
 /* Next & previous buttons */
