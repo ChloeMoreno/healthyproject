@@ -81,6 +81,7 @@ img.yellow-pic {
     color: var(--colororange);
 }
 
+
 @media screen and (min-width: 426px) {
     #banniere {
         height: 150px;
