@@ -182,6 +182,14 @@ transform: rotate(1deg);
           width:80%;
           margin:auto;
           padding:2rem;
-
       }
+        #myBtnContainer {
+            width:80%;
+            margin:auto;
+
+        }
+
+
+     }
+      
 
