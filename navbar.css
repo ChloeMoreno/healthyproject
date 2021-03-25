@@ -33,6 +33,19 @@
         width:160px;
         margin-bottom: 20px;
     }
+
+    .title h1{
+        display:none;
+
+    }
+    .title{
+        justify-content: space-around !important;
+    }
+
+    .logo{
+        width:166px !important;
+        height:153px;
+    }
 }
 
 @media (hover: hover){
@@ -43,6 +56,8 @@
         background-color:var(--colorgreen);
         color:white;
     }
+
+
     
 
 }
@@ -60,6 +75,10 @@ h1 {
     font-size: 2.5em;
 }
 
+.logo{
+    width: 100px;
+}
+
 
 .title {
     display:flex;
@@ -68,7 +87,7 @@ h1 {
     height: 100px;
     background-color:var(--colorgreen);
     text-align: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
 }
 
