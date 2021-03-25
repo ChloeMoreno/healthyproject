@@ -13,19 +13,14 @@
 }
 
 .mid-title {
-    
     color: var(--colorgreen);
     font-size: 26px;
     padding-left: 10px;
-    margin:0px;
-    padding: 20px 20px 0px 20px;
-    
-
+    margin: 0px;;
 }
 
 .separator {
     margin-bottom: 15px;
-    margin-top: 15px;
     border-bottom: #D2DAD3 1px solid;
     width: 100%;
     margin-left: auto;
@@ -43,33 +38,36 @@ body {
 
 .card {
     /* Add shadows to create the "card" effect */
-    box-shadow: 2px 4px 8px 2px rgba(0,0,0,40%);
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 40%);
     transition: 0.3s;
     border-radius: 10px;
-    margin-bottom: 20px;
-    margin-top: 40px;
-  }
+    margin: 15px 5px 15px 5px;
+}
 
-  .card:hover {
-    box-shadow: 2px 8px 16px 2px rgba(0,0,0,60%);
-  }
+.card:hover {
+    box-shadow: 2px 8px 16px 2px rgba(0, 0, 0, 60%);
+}
 
 .big-card {
     display: flex;
     margin: 20px;
     margin-top: 40px;
-    
 }
+
 .card h4 {
     background-color: var(--colorgreen);
     color: white;
-    height: 25px;
+    height: 35px;
     font-family: 'Dancing Script', cursive;
     font-size: 20px;
+    margin: -5px 0px 0px 0px;
+    padding-top: 10px;
 }
+
 img.yellow-pic {
     border-radius: 20px;
 }
+
 .big-card-text {
     display: flex;
     flex-direction: column;
@@ -91,42 +89,32 @@ img.yellow-pic {
         font-family: 'Dancing Script', cursive;
         color: var(--colororange);
         background-color: white;
-        
     }
     .yellow-pic {
         width: 45%;
     }
-   .page-size {
-       width: 80%;
-       background-color: white;
-       margin: auto;
-   }
-
-   body {
-       background-color: #e8e8e8;
-   }
-
+    .page-size {
+        width: 80%;
+        background-color: white;
+        margin: auto;
+        padding: 2rem;
     }
-        
+    body {
+        background-color: #e8e8e8;
+    }
+}
+
 @media screen and (max-width:425px) {
-#banniere {
-    background-color: #DD7E55;
-    color: white;
+    #banniere {
+        background-color: #DD7E55;
+        color: white;
     }
-
     .big-card {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
     .yellow-pic {
         width: 100%;
     }
-    
 }
-
-
-
-
-
