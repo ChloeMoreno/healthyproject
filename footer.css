@@ -18,7 +18,9 @@
 .footer-text {
     font-family: "Montserrat", sans-serif;
 }
-
+.icon img {
+    margin-bottom: 20px;
+}
 
 @media screen and (min-width:426px) {
     footer {
