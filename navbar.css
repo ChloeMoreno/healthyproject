@@ -73,6 +73,9 @@ header h1 {
     text-align: center;
     justify-content: flex-start;
     align-items: center;
+    color:white;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
 }
 
 header a {
