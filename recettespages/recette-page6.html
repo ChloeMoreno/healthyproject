@@ -14,9 +14,56 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3796ae0a6d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="../footer.css">
 </head>
 
 <body>
+
+    <div class="title"> 
+        <h1>Healthy Food</h1> 
+    </div>
+    <header>
+        <nav class="wrapper">
+            <a class="icon" onclick="toggleResponsiveClass()">
+                <i class="fa fa-bars"></i>
+            </a>
+           
+            <ul class="menu">
+                <li>
+                    <a href="../index.html" title="Accueil">Accueil</a>
+                </li>
+                <li>
+                    <a onclick="showSubMenu()" title="Recettes">Recettes</a>
+                    <ul class="sub-menu">
+                       <li>
+                           <a href="../recette-cards.html" title="Matin">Matin</a>
+                        </li>
+                        <li>
+                            <a href="../recette-cards.html" title="Midi">Midi</a>
+                        </li>
+                        <li>
+                            <a href="../recette-cards.html" title="Snack">Snack</a>
+                        </li>
+                        <li>
+                            <a href="../recette-cards.html" title="Soir">Soir</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../about.html" title="A propos">A propos</a>
+                </li>
+                <li>
+                    <a href="../form.html" title="Contact">Contact</a>
+                </li>
+                <li>
+                   <input type="text" placeholder="Rechercher"> 
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
     <div class="post-container">
 
         <div class="post-img-container">
@@ -166,5 +213,27 @@
         </div>
 
 </body>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-text">
+        <p>The healthy project © </p>
+        <hr width="80%" color="white" size="0,5px">
+        <p> Un projet réalisé par THE groupe 2. </p>
+        </div>
+        <div class="icons">
+            
+            <a href="https://github.com/ChloeMoreno/healthyproject"> <img src="github-light.png"></a>
+            <a href="https://www.instagram.com/?hl=fr"> 
+            <i class="fa fa-instagram" style="font-size: 40px"> </i></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <i class="fa fa-youtube-play" style="font-size:40px"></i></a>
+
+
+        </div>
+    </div>
+
+
+</footer>
 
 </html>

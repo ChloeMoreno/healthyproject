@@ -21,26 +21,58 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/3796ae0a6d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="form.css">
-    <link href="navbarre.css" rel="stylesheet">
+    <link href="navbar.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 <body>
   
-    <section class="navbar">
-        <div class="navbar" id="myNavbar">
-        <a class="icon" onclick="toggleResponsiveClass(event)">
-            <i class="fa fa-bars"></i>
-            <a href="index.html">Accueil</a>
-            <a href="recette-page.html">Recettes</a>
-            <a href="about.html">A propos</a>
-            <a href="form.html">Contact</a>
-        <form class="rechercher" method="GET" action="rechercher.js">
-            <input type="text" placeholder="Rechercher">
-         </form>
-         </div>
-    </section>
+    <section> 
+        <div class="title"> 
+       <h1>Healthy Food</h1> 
+   </div>
+   <header>
+       <nav class="wrapper">
+           <a class="icon" onclick="toggleResponsiveClass()">
+               <i class="fa fa-bars"></i>
+           </a>
+          
+           <ul class="menu">
+               <li>
+                   <a href="index.html" title="Accueil">Accueil</a>
+               </li>
+               <li>
+                   <a onclick="showSubMenu()" title="Recettes">Recettes</a>
+                   <ul class="sub-menu">
+                      <li>
+                          <a href="recette-cards.html" title="Matin">Matin</a>
+                       </li>
+                       <li>
+                           <a href="recette-cards.html" title="Midi">Midi</a>
+                       </li>
+                       <li>
+                           <a href="recette-cards.html" title="Snack">Snack</a>
+                       </li>
+                       <li>
+                           <a href="recette-cards.html" title="Soir">Soir</a>
+                       </li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="about.html" title="A propos">A propos</a>
+               </li>
+               <li>
+                   <a href="form.html" title="Contact">Contact</a>
+               </li>
+               <li>
+                  <input type="text" placeholder="Rechercher"> 
+               </li>
+           </ul>
+
+       </nav>
+   </header>
+</section>   
     
     <div class="page-size">
     <h1>Contactez nous</h1>
