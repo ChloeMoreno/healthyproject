@@ -9,7 +9,7 @@
     text-align: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .mid-title {
@@ -17,6 +17,8 @@
     color: var(--colorgreen);
     font-size: 26px;
     padding-left: 10px;
+    margin:0px;
+    padding: 20px 20px 0px 20px;
     
 
 }
