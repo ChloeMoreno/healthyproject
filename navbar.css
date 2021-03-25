@@ -15,7 +15,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        max-width: 100px;
+       width:100%;
     }
 
     nav .menu:not(first-child){
@@ -165,7 +165,7 @@ header li a{
 
 .sub-menu li a {
     color:var(--colororange);
-    width: 200px;
+    width: 100%;
     height:50px;
     line-height: 50px;
 
