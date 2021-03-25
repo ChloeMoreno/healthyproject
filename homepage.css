@@ -15,52 +15,37 @@
     align-items: center;
     flex-wrap: wrap;
   }
-  .homepage h1 {
-    width: 100%;
-    padding: 40px;
-    margin: 0;
-
-    background-image: url(https://cdn.pixabay.com/photo/2015/12/30/11/57/fruits-1114060_960_720.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .homepage h1 + p {
-    color: #2e2927;
-    margin: 10px;
-    border-radius: 10px;
-    background-image: url(https://graphiste.com/blog/wp-content/uploads/2019/06/pack-texture.jpg);
-  }
-  .homepage-container {
-    background-color: white;
-  }
-  .homepage-container h2 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    border-bottom: #d2dad3 1px solid;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--colorgrey);
-  }
-  .homepage-img {
-    background-color: white;
-  }
-  .homepage-img img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  .homepage-img a {
-    height: 200px;
-  }
-  .homepage-img p {
-    font-size: 16px;
-    width: 100%;
-    text-align: center;
-    background-color: var(--colorgrey);
-  }
+}
+.homepage-container {
+  background-color: white;
+}
+.homepage-container h2 {
+  padding-top: 10px;
+  margin: 2rem;
+  padding-bottom: 10px;
+  color: var(--colorgreen);
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border-bottom: #d2dad3 1px solid;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.homepage-img {
+  background-color: white;
+}
+.homepage-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+.homepage-img a {
+  height: 200px;
+}
+.homepage-img p {
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  background-color: var(--colorgrey);
 }
 
 @media screen and (min-width: 601px) {
@@ -88,51 +73,177 @@
     align-items: center;
     flex-wrap: wrap;
   }
-  .homepage h1 {
-    width: 100%;
-    padding: 40px;
+}
+.homepage-container {
+  background-color: white;
+}
+.homepage-container h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: var(--colorgreen);
+  text-align: left;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border-bottom: #d2dad3 1px solid;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.homepage-img {
+  background-color: white;
+}
+.homepage-img img {
+  margin: 20px;
+  width: 20%;
+  height: auto;
+  border-radius: 10px;
+}
+.homepage-img a {
+  height: 200px;
+}
+.homepage-img p {
+  font-size: 16px;
+  display: none;
+  width: 100%;
+  text-align: center;
+  background-color: var(--colorgrey);
+}
 
-    background-image: url(https://cdn.pixabay.com/photo/2015/12/30/11/57/fruits-1114060_960_720.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0
+}
+
+.mySlides {
+  display: none;
+  overflow:hidden;
+  max-height: 500px;
+}
+
+img {
+  vertical-align: middle;
+
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+  max-width: 80%;
+  position: relative;
+  margin: auto;
+  max-height: 500px;
+}
+
+.button-slide {
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  padding: 10px 0px 10px 0px;
+}
+
+/* Next & previous buttons */
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
   }
-  .homepage h1 + p {
-    color: #2e2927;
-    margin: 10px;
-    border-radius: 10px;
-    background-image: url(https://graphiste.com/blog/wp-content/uploads/2019/06/pack-texture.jpg);
+  to {
+    opacity: 1
   }
-  .homepage-container {
-    background-color: white;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
   }
-  .homepage-container h2 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    border-bottom: #d2dad3 1px solid;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--colorgrey);
+  to {
+    opacity: 1
   }
-  .homepage-img {
-    background-color: white;
-  }
-  .homepage-img img {
-    width: 30%;
-    height: auto;
-    border-radius: 10px;
-  }
-  .homepage-img a {
-    height: 200px;
-  }
-  .homepage-img p {
-    font-size: 16px;
-    display: none;
-    width: 100%;
-    text-align: center;
-    background-color: var(--colorgrey);
+}
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {
+    font-size: 11px
   }
 }

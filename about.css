@@ -30,6 +30,7 @@
 
 body {
     font-family: "Montserrat", sans-serif;
+    margin: 0px;
 }
 
 .card p {
@@ -80,6 +81,7 @@ img.yellow-pic {
     font-size: 35px;
     color: var(--colororange);
 }
+
 
 @media screen and (min-width: 426px) {
     #banniere {
