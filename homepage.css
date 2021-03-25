@@ -70,8 +70,8 @@
     --colorgrey: #72bda3;
   }
   body {
-    width: 90%;
-    background-color: var(--colororange);
+    width: 100%;
+    background-color: #e8e8e8;
     margin: auto;
   }
 
