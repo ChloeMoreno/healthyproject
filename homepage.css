@@ -3,10 +3,15 @@
     --colorgrey: #72bda3;
   }
   .message-bienvenue h1 {
+    color: var(--colorgreen);
+    font-size: 50px;
+    font-family: "Dancing Script", cursive;
     display: flex;
     justify-content: center;
   }
   .homepage {
+    font-size: 50px;
+    font-family: "Dancing Script", cursive;
     height: auto;
     width: auto;
     display: flex;
