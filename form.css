@@ -1,5 +1,5 @@
 
-h1 {
+.contact-title {
     color: #517B54;
     display: flex;
     justify-content: center;
@@ -62,6 +62,7 @@ body {
         width: 80%;
         margin: auto;
         background-color: white;
+        padding:2em;
     }
 
     body {

@@ -40,8 +40,9 @@ body {
     text-align: center;
     width:80%;
     background-color:white; 
-    padding:0.5rem;
     box-shadow: 1px 1px 10px 1px rgb(182, 182, 182);
+    width: 100%;
+    margin: auto;
 }
 
 
@@ -60,11 +61,11 @@ border-top-right-radius: 10px;
     max-height: 600px;
     box-shadow: 1px 1px 10px 1px rgb(182, 182, 182);
     background-color: white;
-    width: 100%;
     position:relative; 
     border-radius: 10px;
     display: none;
    transition-duration:0.3s ;
+   margin: 10px;
 }
 
 .img-recette {

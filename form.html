@@ -25,12 +25,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script>
+        function toggleResponsiveClass() {
+            const nav = document.querySelector(".menu");
+            nav.classList.toggle("responsive");
+        }
+
+        function showSubMenu(){
+            const subMenu = document.querySelector(".sub-menu");
+            subMenu.classList.toggle("responsive");
+        }
+    </script>
 </head>
 <body>
   
     <section> 
+    <div class="title"> 
         <img src="logoHC-02.png" class="logo"/>
-        <h1>Healthy CooK</h1> 
+        <h1>Healthy Cook</h1> 
    </div>
    <header>
        <nav class="wrapper">
@@ -75,7 +87,7 @@
 </section>   
     
     <div class="page-size">
-    <h1>Contactez nous</h1>
+    <h1 class="contact-title">Contactez nous</h1>
     <div id="form-text">
     <p class="form-text">Vous désirez nous faire un retour ? Envoyez nous vos suggestions par mail ! </p>
     </div>
