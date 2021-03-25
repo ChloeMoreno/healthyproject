@@ -15,52 +15,37 @@
     align-items: center;
     flex-wrap: wrap;
   }
-  .homepage h1 {
-    width: 100%;
-    padding: 40px;
-    margin: 0;
-
-    background-image: url(https://cdn.pixabay.com/photo/2015/12/30/11/57/fruits-1114060_960_720.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .homepage h1 + p {
-    color: #2e2927;
-    margin: 10px;
-    border-radius: 10px;
-    background-image: url(https://graphiste.com/blog/wp-content/uploads/2019/06/pack-texture.jpg);
-  }
-  .homepage-container {
-    background-color: white;
-  }
-  .homepage-container h2 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    border-bottom: #d2dad3 1px solid;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--colorgrey);
-  }
-  .homepage-img {
-    background-color: white;
-  }
-  .homepage-img img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  .homepage-img a {
-    height: 200px;
-  }
-  .homepage-img p {
-    font-size: 16px;
-    width: 100%;
-    text-align: center;
-    background-color: var(--colorgrey);
-  }
+}
+.homepage-container {
+  background-color: white;
+}
+.homepage-container h2 {
+  padding-top: 10px;
+  margin: 2rem;
+  padding-bottom: 10px;
+  color: var(--colorgreen);
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border-bottom: #d2dad3 1px solid;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.homepage-img {
+  background-color: white;
+}
+.homepage-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+.homepage-img a {
+  height: 200px;
+}
+.homepage-img p {
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  background-color: var(--colorgrey);
 }
 
 @media screen and (min-width: 601px) {
@@ -88,51 +73,38 @@
     align-items: center;
     flex-wrap: wrap;
   }
-  .homepage h1 {
-    width: 100%;
-    padding: 40px;
-
-    background-image: url(https://cdn.pixabay.com/photo/2015/12/30/11/57/fruits-1114060_960_720.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .homepage h1 + p {
-    color: #2e2927;
-    margin: 10px;
-    border-radius: 10px;
-    background-image: url(https://graphiste.com/blog/wp-content/uploads/2019/06/pack-texture.jpg);
-  }
-  .homepage-container {
-    background-color: white;
-  }
-  .homepage-container h2 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    border-bottom: #d2dad3 1px solid;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--colorgrey);
-  }
-  .homepage-img {
-    background-color: white;
-  }
-  .homepage-img img {
-    width: 30%;
-    height: auto;
-    border-radius: 10px;
-  }
-  .homepage-img a {
-    height: 200px;
-  }
-  .homepage-img p {
-    font-size: 16px;
-    display: none;
-    width: 100%;
-    text-align: center;
-    background-color: var(--colorgrey);
-  }
+}
+.homepage-container {
+  background-color: white;
+}
+.homepage-container h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: var(--colorgreen);
+  text-align: left;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border-bottom: #d2dad3 1px solid;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.homepage-img {
+  background-color: white;
+}
+.homepage-img img {
+  margin: 20px;
+  width: 20%;
+  height: auto;
+  border-radius: 10px;
+}
+.homepage-img a {
+  height: 200px;
+}
+.homepage-img p {
+  font-size: 16px;
+  display: none;
+  width: 100%;
+  text-align: center;
+  background-color: var(--colorgrey);
 }
