@@ -85,7 +85,7 @@ header h1 {
     display:flex;
     flex-direction: row;
     width:100%;
-    height: 100px;
+    height: 141px;
     background-color:var(--colorgreen);
     text-align: center;
     justify-content: flex-start;
