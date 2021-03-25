@@ -23,13 +23,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="homepage.css">
     <link rel="stylesheet" href="footer.css">
+    <script>
+        function toggleResponsiveClass() {
+            const nav = document.querySelector(".menu");
+            nav.classList.toggle("responsive");
+        }
+
+        function showSubMenu(){
+            const subMenu = document.querySelector(".sub-menu");
+            subMenu.classList.toggle("responsive");
+        }
+    </script>
 </head>
 <body>
 
     <section> 
         <div class="title"> 
             <img src="logoHC-02.png" class="logo"/>
-            <h1>Healthy CooK</h1> 
+            <h1>Healthy Cook</h1> 
         </div>
         <header>
             <nav class="wrapper">
