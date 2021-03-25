@@ -4,7 +4,7 @@
     --colorgrey: #2e2927;
 }
 
-a {
+.icons a {
     list-style: none;
     color: white;
 }
@@ -27,7 +27,7 @@ a {
         color: white;
         text-align: center;
     }
-    .icon {
+    .icons {
         margin-bottom: 10px;
     }
     .footer-text {
