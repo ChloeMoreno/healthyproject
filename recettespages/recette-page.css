@@ -123,6 +123,11 @@ h2 {
     margin-right: auto;
 }
 
+.post-components input {
+    width:15px!important;
+    margin:0px!important;
+}
+
 .post-components ul li {
     list-style: none;
     font-size: 0.9em;
