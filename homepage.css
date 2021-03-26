@@ -1,4 +1,3 @@
-
 @media screen and (max-width: 600px) {
   :root {
     --colorgrey: #72bda3;
@@ -33,7 +32,6 @@
   margin: 2rem;
   padding-bottom: 10px;
   color: var(--colorgreen);
-  margin-bottom: 15px;
   margin-top: 15px;
   border-bottom: #d2dad3 1px solid;
   width: 100%;
@@ -64,23 +62,21 @@
     --colorgrey: #72bda3;
   }
   body {
-    width: 100%;
+    margin-bottom: 0;
+    width: 80%;
     background-color: #e8e8e8;
-    margin: auto;
   }
   .message-bienvenue h1 {
+    margin: 80%;
+    background-color: white;
     font-size: 50px;
     font-family: "Dancing Script", cursive;
     padding-top: 10px;
     padding-bottom: 10px;
     color: var(--colorgreen);
-    text-align: left;
-    margin-bottom: 15px;
     margin-top: 15px;
     border-bottom: #d2dad3 1px solid;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 80%;
     display: flex;
     justify-content: center;
   }
@@ -110,10 +106,9 @@
   padding-bottom: 10px;
   color: var(--colorgreen);
   text-align: left;
-  margin-bottom: 15px;
   margin-top: 15px;
   border-bottom: #d2dad3 1px solid;
-  width: 100%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -128,22 +123,6 @@
 }
 .homepage-img a {
   height: 200px;
-}
-.homepage-img p {
-  font-size: 16px;
-  display: none;
-  width: 100%;
-  text-align: center;
-  background-color: var(--colorgrey);
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Verdana, sans-serif;
-  margin: 0;
 }
 
 .mySlides {
@@ -282,7 +261,7 @@ img {
     font-size: 11px;
   }
 }
-=======
+
 @media screen and (max-width: 600px) {
   :root {
     --colorgrey: #72bda3;
@@ -308,11 +287,12 @@ img {
   background-color: white;
 }
 .homepage-container h2 {
+  font-family: montserrat;
   padding-top: 10px;
   margin: 2rem;
   padding-bottom: 10px;
   color: var(--colorgreen);
-  margin-bottom: 15px;
+
   margin-top: 15px;
   border-bottom: #d2dad3 1px solid;
   width: 100%;
@@ -343,9 +323,13 @@ img {
     --colorgrey: #72bda3;
   }
   body {
+    margin-bottom: 0px;
     width: 100%;
     background-color: #e8e8e8;
     margin: auto;
+  }
+  .footer-container {
+    margin-bottom: 0;
   }
   .message-bienvenue h1 {
     font-size: 50px;
@@ -357,7 +341,7 @@ img {
     margin-bottom: 15px;
     margin-top: 15px;
     border-bottom: #d2dad3 1px solid;
-    width: 100%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -386,10 +370,10 @@ img {
 .homepage-container h2 {
   font-size: 2rem;
   padding-top: 10px;
-  padding-bottom: 10px;
+
   color: var(--colorgreen);
   text-align: left;
-  margin-bottom: 15px;
+
   margin-top: 15px;
   border-bottom: #d2dad3 1px solid;
   width: 100%;
@@ -416,15 +400,7 @@ img {
   background-color: var(--colorgrey);
 }
 
-
-* {
-  box-sizing: border-box;
-}
-
-
-
 body {
-  font-family: Verdana, sans-serif;
   margin: 0;
 }
 
@@ -564,4 +540,3 @@ img {
     font-size: 11px;
   }
 }
-
